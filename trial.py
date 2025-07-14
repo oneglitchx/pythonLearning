@@ -225,8 +225,8 @@
 # l1.reverse()
 # print(l1)
 
-l1 = [34,34,45,56,67,23,7]
-reversed_list = reversed(l1)
+# l1 = [34,34,45,56,67,23,7]
+# reversed_list = reversed(l1)
 # print(reversed_list)
 # print(l1[::-1])
 
@@ -241,22 +241,148 @@ reversed_list = reversed(l1)
 # print(s)
 # for i in s:
 #     print(s)
-s = ""
-for i in reversed_list:
-    s = s + str(i)
+# s = ""
+# for i in reversed_list:
+#     s = s + str(i)
 
-print(s)
+# print(s)
 
-for i in s:
-    i = i + " "
-    i.removesuffix(" ")
-    print(i)
-print(i.split())
-i = i.split()
+# for i in s:
+#     i = i + " "
+#     i.removesuffix(" ")
+#     print(i)
+# print(i.split())
+# i = i.split()
 
-number = []
-for interger in i:
-    interger = int(interger)
-    number.append(interger)
+# number = []
+# for interger in i:
+#     interger = int(interger)
+#     number.append(interger)
 
-print(number)
+# print(number)
+# ss = "I am the Best and I am stronger , I am smarter I am better I am better "
+# print(len(ss))
+# print(ss.removesuffix(" "))
+# print(len(ss))
+
+
+
+# t1 = (34,34,45,546,657)
+
+# t2 = (4,6,6)
+
+# t3 = t1+t2
+# print(t3)
+# print(t1+t2)
+
+# a , b,c = t2
+# print(a)
+
+# dict1 = {
+#     "name": "Mayank Kashyap", "age": 17, "hobbie": "programming"
+# }
+
+# print(dict1.items())
+# print(dict1.keys())
+# print(dict1.values())
+# print(dict1.get("name"))
+# print(dict1["hobbie"])
+
+# eliminated = dict1.pop("name")
+
+# learning about the dictionaries of the python 
+
+# data = {
+#     "name":"Mayank Kashyap", "age":17 , "hobbie": "programming"
+# }
+
+# print(data.items())
+# print(data.values())
+# print(data.keys())
+# print(data.get("name"))
+# print(data.pop("age"))
+# print(data)
+# print(data.popitem())
+
+# playaer = {"Mayank", "Joney", "bikeis"}
+# print(playaer,len(playaer))
+# playaer.add("Wokong")
+# print(playaer)
+
+
+# Program for the exercise of the chapter 5
+
+# progyam to store the meaning of the hini to english words and allowing the user to look up the values
+
+# meanings = {"sundar": "beautiful","buddhiman":"intelligent","accha":"good","swarg":"heaven"}
+
+
+# lookup = input("Enter the Hindi word to know the meaning: ")
+# print(f"The English meaning of {lookup.capitalize()} is {meanings.get(lookup).capitalize()}")
+
+
+# numb = input("Enter the numbers: ").split()
+# ourset = set(numb)
+# print(type(ourset))
+# print(int(numb))
+# print(ourset)
+
+# s = set()
+
+# n = int(input("Enter the number 1: "))
+# s.add(n)
+# n = int(input("Enter the number 2: "))
+# s.add(n)
+# n = int(input("Enter the number 3: "))
+# s.add(n)
+# n = int(input("Enter the number 4: "))
+# s.add(n)
+# n = int(input("Enter the number 5: "))
+# s.add(n)
+# n = int(input("Enter the number 6: "))
+# s.add(n)
+# n = int(input("Enter the number 7: "))
+# s.add(n)
+# n = int(input("Enter the number 8: "))
+# s.add(n)
+
+# print(s)
+
+
+# dit = {}
+# name = input("Enter the names of the friends: ")
+# lan = input("Enter the name of the fav language: ")
+# dit.update({name : lan})
+# name = input("Enter the names of the friends: ")
+# lan = input("Enter the name of the fav language: ")
+# dit.update({name : lan})
+# name = input("Enter the names of the friends: ")
+# lan = input("Enter the name of the fav language: ")
+# dit.update({name : lan})
+# name = input("Enter the names of the friends: ")
+# lan = input("Enter the name of the fav language: ")
+# dit.update({name : lan})
+
+# print(dit)
+
+
+# # A program to take four numbers form the user and comare it which of them from all is the greatest
+
+# # Taking user unputs
+# numb1 = int(input("Enter the number 1 : "))
+# numb2 = int(input("Enter the number 2 : "))
+# numb3 = int(input("Enter the number 3 : "))
+# numb4 = int(input("Enter the number 4 : "))
+
+# # Comparing the one numbers to each 
+# if numb1 > numb2 and numb1 > numb3 and numb1 > numb4:
+#     print(f"{numb1} is the greatest number.")
+# elif numb2 > numb1 and numb2 > numb3 and numb2 > numb4:
+#     print(f"{numb2} is the greatest number.")
+# elif numb3 > numb2 and numb3 > numb3 and numb3 > numb4:
+#    print(f"{numb3} is the greatest number.")
+# elif numb4 > numb2 and numb4 > numb3 and numb4 > numb4:
+#    print(f"{numb4} is the greatest number.")
+# else:
+#     print("Enter the valid number.")
+

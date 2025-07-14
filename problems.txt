@@ -1,0 +1,30 @@
+# Problem related to the iterator and the conversion of it in other data type 
+
+l1 = [34,34,45,56,67,23,7]
+reversed_list = reversed(l1) # Made the new list of the reversed list which returns the iterator
+
+
+# Trying converting the value of iterator to the string for the later conversion of it into the list of string based numbers and later conversion into the numeric intergers
+
+# The objective here is to convert the reversed iterator form into the list with real intergers without using the list function
+s = ""
+for i in reversed_list:
+    s = s + str(i)
+
+print(s)
+
+for i in s:
+    i = i + " "
+    i.removesuffix(" ")
+    print(i)
+print(i.split())
+i = i.split()
+
+number = []
+for interger in i:
+    interger = int(interger)
+    number.append(interger)
+
+print(number)
+
+
