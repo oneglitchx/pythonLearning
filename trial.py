@@ -365,7 +365,7 @@
 
 # print(dit)
 
-
+# 📌
 # # A program to take four numbers form the user and comare it which of them from all is the greatest
 
 # # Taking user unputs
@@ -386,3 +386,143 @@
 # else:
 #     print("Enter the valid number.")
 
+
+
+# 📌
+# Taking user input of the marks of the subjects
+
+# taking 33 marks as the passing marks of each subject and overall 40 percentage is the all overall pssing marks
+
+# mathematics = int(input("Enter the marks obtained in the Mathematics out of 100: "))
+# science = int(input("Enter the marks obtained in the Science out of 100: "))
+# english = int(input("Enter the marks obtained in the English out of 100: "))
+
+# if (mathematics/100*100) >= 33:
+#     print(f"You passed in the mathematics examnination and your percentage is {mathematics/100*100}.")
+# else:
+#     print(f"You failed in the mathematicse examination and your percentage is {mathematics/100*100}.")
+# if (science/100*100) >= 33:
+#     print(f"You passed in the science examnination and your percentage is {science/100*100}.")
+# else:
+#     print(f"You failed in the science examination and your percentage is {science/100*100}.")
+# if (english/100*100) >= 33:
+#     print(f"You passed in the english examnination and your percentage is {english/100*100}.")
+# else:
+#     print(f"You failed in the english examination and your percentage is {english/100*100}.")
+
+# if (mathematics+science+english)/100*300 >=40:
+#     print(f"You have passed overall the examinations and your overall percentage is {(mathematics+science+english)/300*100}.")
+# else:
+#     print(f"You have failed the overall examinations  and your overall percentage is {(mathematics+science+english)/300*100}.")
+
+
+
+# if (mathematics/100*100) >= 33 and (science/100*100) >= 33 and (english/100*100) >= 33:
+#     print("Congratulations !!!!!, You have passed all the examinations.")
+# else:
+#     print("You failed in all the examinations.")
+
+
+# 📌
+
+# # The programs checks whether the text or prompt are the spam text or not via using specific key words
+
+# # spam_text is the texts which are spam and it is here to test the program
+# spam_texts = [
+#     "Congratulations! You've won a FREE iPhone. Click here to claim your prize now!",
+#     "Act now! Limited time offer to earn money from home. No experience required!",
+#     "You have been pre-approved for a credit card. Get instant access to $5000 cash.",
+#     "Buy now and double your income in just 7 days. Risk-free opportunity!",
+#     "Urgent: Your account has been compromised. Click the link to secure it immediately.",
+#     "This is not a scam! You can make $1000 a day with this exclusive deal!"
+# ]
+
+
+# spam_keywords = [
+#     "free",
+#     "FREE",
+#     "win",
+#     "winner",
+#     "congratulations",
+#     "cash",
+#     "urgent",
+#     "limited time",
+#     "click here",
+#     "exclusive deal",
+#     "buy now",
+#     "cheap",
+#     "guarantee",
+#     "no cost",
+#     "risk-free",
+#     "special promotion",
+#     "act now",
+#     "call now",
+#     "instant access",
+#     "double your income",
+#     "earn money",
+#     "extra income",
+#     "fast cash",
+#     "work from home",
+#     "pre-approved",
+#     "credit card offer"
+# ]
+
+# text = input("Enter the text: ")
+
+# # Logic for detecting spam texts
+# for i in spam_keywords:
+#     if i in text:
+#         print("The text is spam.")
+#         break
+    
+# else:
+#     print("The text is not spam.")
+    
+
+
+# 📌
+
+# # Program which will take user name as an input and checks whether the length of the user name is less then 10 charecters or not.
+# user_name  = input("Enter the user name: ")
+# if len(user_name)>10:
+#     print("The user name's length is more than 10 charecters.")
+# elif len(user_name)==10:
+#     print("The user name's length is equal to 10 charecters.")
+# else:
+#     print("The user name's length is less than 10 charecters.")
+
+# 📌
+
+usernames = [
+    "asura",
+    "tamanna_08",
+    "mastermind101",
+    "admin",
+    "ghost_user",
+    "cyberhawk",
+    "alpha_wolf",
+    "zen_monk",
+    "root_access",
+    "quantum_mind",
+    "code_wizard",
+    "silentstorm",
+    "echo_chamber",
+    "dark_knight",
+    "python_pro",
+    "neo_nova",
+    "byte_me",
+    "login_buddy",
+    "terminal_vision",
+    "user_zero",
+    "h4ck3rman",
+    "data_druid",
+    "noobmaster69",
+    "shadow_slave",
+    "sigma_code"
+]
+
+name = input("Enter the user name: ")
+if name in usernames:
+    print("Yes,Your name is in the database.")
+else:
+    print("No, Your name is not in the database.")
