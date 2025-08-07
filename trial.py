@@ -493,36 +493,259 @@
 
 # 📌
 
-usernames = [
-    "asura",
-    "tamanna_08",
-    "mastermind101",
-    "admin",
-    "ghost_user",
-    "cyberhawk",
-    "alpha_wolf",
-    "zen_monk",
-    "root_access",
-    "quantum_mind",
-    "code_wizard",
-    "silentstorm",
-    "echo_chamber",
-    "dark_knight",
-    "python_pro",
-    "neo_nova",
-    "byte_me",
-    "login_buddy",
-    "terminal_vision",
-    "user_zero",
-    "h4ck3rman",
-    "data_druid",
-    "noobmaster69",
-    "shadow_slave",
-    "sigma_code"
-]
+# usernames = [
+#     "asura",
+#     "tamanna_08",
+#     "mastermind101",
+#     "admin",
+#     "ghost_user",
+#     "cyberhawk",
+#     "alpha_wolf",
+#     "zen_monk",
+#     "root_access",
+#     "quantum_mind",
+#     "code_wizard",
+#     "silentstorm",
+#     "echo_chamber",
+#     "dark_knight",
+#     "python_pro",
+#     "neo_nova",
+#     "byte_me",
+#     "login_buddy",
+#     "terminal_vision",
+#     "user_zero",
+#     "h4ck3rman",
+#     "data_druid",
+#     "noobmaster69",
+#     "shadow_slave",
+#     "sigma_code"
+# ]
 
-name = input("Enter the user name: ")
-if name in usernames:
-    print("Yes,Your name is in the database.")
-else:
-    print("No, Your name is not in the database.")
+# name = input("Enter the user name: ")
+# if name in usernames:
+#     print("Yes,Your name is in the database.")
+# else:
+#     print("No, Your name is not in the database.")
+
+
+# 📌
+# write a program to give grades to the students according to the merks scheme
+
+# marks = int(input("Enter the marks of the subject: "))
+# if (marks>=90 and marks<=100):
+#     print("Your grade in the subject is excellent.")
+# elif (marks>=80 and marks<90):
+#     print("Your grade in the subject is A.")
+# elif (marks>=70 and marks<80):
+#     print("Your grade in the subject is B.")
+# elif (marks>=60 and marks<70):
+#     print("Your grade in the subject is C.")
+# elif (marks>=50 and marks<60):
+#     print("Your grade in the subject is D.")
+# elif (marks<=49):
+#     print("Your grade in the subject is F.")
+
+# 📌
+# write a program whether a post is talking about Harry or not
+
+# my version of code
+
+# post = input("Enter text of the post: ")
+# # print(post)
+# if "harry" or "Harry" or 'HARRY' in post:
+#     print("The post is talking about Harry.")
+# else:
+#     print("No, the post is not talking about Harry.")
+
+
+# code with harry version of code
+# post = input("Enter the post text: ")
+# if "harry" in post.lower():
+#     print("The post is talking about Harry.")
+# else:
+#     print("The post is not talking about Harry.")
+
+"""
+Loops exercises from code with harry
+"""
+
+# i = 1
+# while(i<51):
+#     print(i)
+#     i+=1
+
+# l = ["mayank", "kashyap","BAN"]
+# i = 0
+# while i < len(l):
+#     print(l[i])
+#     i += 1
+
+# for i in range(101):
+#     if i == 69:
+#         break
+#     print(i)
+    
+# i = 0 
+# while(i<100):
+#     if i == 69:
+#         i += 1
+#         continue
+#     print(i)
+#     i += 1
+
+# 📌
+# program which can print multiplicative table using a for loop 
+
+# number = int(input("Enter the number for the table; "))
+
+# for i in range(1,11):
+#     print(f"{number} X {i} = {number*i}")
+
+
+# 📌
+# this program will great the people whose name starts with the letter s
+# li = ["Mayank", "Satyam", "Satan"]
+
+# for i in li:
+#     if "s" in i.lower():
+#         print(f"Good Morning!!, {i}")
+
+# 📌
+# program which can print multiplicative table using a while loop 
+# number = int(input("Enter the number for the table: "))
+# i = 0
+# while i<11:
+#     print(f"{number} X {i} = {number*i}")
+#     i+= 1
+
+
+# 📌
+# this program will print the firt n number of sum using while loop
+"""number = int(input("Enter the number till you want the sum of natural numbers: "))
+i = 0 
+sum = [i for i in range(0,number)]
+
+while i < number:
+    ans = sum[i] + sum[i+1]
+    print(ans)
+
+"""
+# nem = int(input("Enter the number: "))
+
+# i = 0 
+# sum = 0
+# while i<=nem:
+#     sum = sum + i  # sum+= i
+#     i += 1
+# print(sum)
+
+# 📌
+# check weither the number is prime or not
+
+# number = int(input("Enter the number: "))
+# for i in range(2,number):
+#     if (number%i == 0):
+#         print("The number is not prime.")
+#         break
+#     # else:
+#     #     print("Number is a prime")
+# else:
+#     print("Number is a prime")
+    
+
+# 📌
+# this program gives the factorial of the number
+
+# number = int(input("Enter the number: "))
+
+# f = 1
+# for i in range(1,number+1):
+#     if number == 0:
+#         break
+#     f *= i
+# print(f)
+
+
+# 📌
+# printing star pattern
+# n = 3
+# for i in range(1,n+1):
+#     print("*"*i)
+
+# 📌
+# printing another star pattern 
+"""
+   *
+  ***
+ *****
+*******
+"""
+
+# n = int(input("Enter the number: "))
+
+# for i in range(1,n+1):
+#     print(" " * (n-i) , end="")
+#     print("*" * (i*2 -1) )
+
+# print("A"*n)
+
+# 📌
+# print the pattern n = 3
+'''
+* * *
+*   *
+* * * 
+
+* * * *
+*     *
+*     *
+* * * *
+'''
+# My version of code without the help of the solution 
+
+# n = int(input("Enter the number: "))
+# for i in range(1,n+1):
+#     # if( i == 1 or i == n):
+#     #     print("* " * n)
+#     if ( i == 1 or i == n):
+#         print("* " * n)
+#     else:
+#         print("*"+" " * (2*i -1) +"*")
+
+# Refined version of code with the help of the solution
+# And the above code I misunderstood the problem and pattern making
+
+# n = int(input("Enter the number: "))
+
+# for i in range(1,n+1):
+#     if i == 1 or i == n :
+#         print("*" * n)
+#     else:
+#         print("*",end="")
+#         print(" " * (n-2), end="")
+#         print("*",end="\n")
+    
+# 📌
+# This program will print the table in reverse order
+# My way of solvig the problem
+# n = int(input("Enter the number: "))
+# l = []
+# for i in range(1,11):
+#     l.append(i)
+# # print(l)                          """Insight : Mathematics is the key"""    """Insight : You have to be able to see patterns and translate ideas into mathematical statements"""                                                         
+# l.reverse()                         
+# # print(l)
+# for i in l:
+#     print(f"{n} X {i} = {n*i}")
+
+# # Refined way and more efficient way with the help of code with harry
+# n = int(input("Enter the number: "))
+# for i in range(1,11):
+#     print(f"{n} X {11-i} = {n*11-i}")
+
+
+# practice for functions in python     
+def greet():
+    return "Hello Guys, Chai Pilo"
+g = greet()
+print(g)

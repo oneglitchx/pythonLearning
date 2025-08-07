@@ -1,4 +1,4 @@
-# Problem related to the iterator and the conversion of it in other data type 
+# Problem related to the iterator and the conversion of it in other data type  
 
 l1 = [34,34,45,56,67,23,7]
 reversed_list = reversed(l1) # Made the new list of the reversed list which returns the iterator
