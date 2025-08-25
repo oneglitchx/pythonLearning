@@ -745,7 +745,177 @@ while i < number:
 
 
 # practice for functions in python     
-def greet():
-    return "Hello Guys, Chai Pilo"
-g = greet()
-print(g)
+# def greet():
+#     return "Hello Guys, Chai Pilo"
+# g = greet()
+# print(g)
+
+"""
+            Chapter 8 practice set 
+1. Write a program using functions to find greatest of three numbers. 
+2. Write a python program using function to convert Celsius to Fahrenheit. 
+3. How do you prevent a python print() function to print a new line at the end. 
+4. Write a recursive function to calculate the sum of first n natural numbers. 
+5. Write a python function to print first n lines of the following pattern: 
+*** 
+**               - for n = 3 
+* 
+6. Write a python function which converts inches to cms. 
+7. Write a python function to remove a given word from a list ad strip it at the same 
+time. 
+8. Write a python function to print multiplication table of a given number. 
+ 
+"""
+# 📌
+# Solution of the problem number 1
+# def greater3(a,b, c):
+#     if a>b and a>c:
+#         return f"{a} is greatest"
+#     elif b>a and b>c:
+#         return f"{b} is greatest"
+#     elif c>a and c>b:
+#         return f"{c} is greatest"
+
+
+# a = greater3(34,654,2342342)
+
+# print(a)
+
+
+# 📌
+# Solution for the question number 2
+
+def ctof(c):
+    pass
+
+# 📌
+# Solution for the question number 3
+# print("Hello, World!", end="")
+
+# 📌
+# Solution for the question number 4
+
+# def sum_of_first(n):
+#     if n < 0 :
+#         return 0
+#     return n + sum_of_first(n-1)
+#         #  1 0 
+# a = sum_of_first(10)
+# print(a)
+
+# 📌
+# Solution for the question number 5
+
+"""
+*** 
+**               - for n = 3 
+* 
+"""
+
+# def patternnn(n):
+#     l = []
+#     for i in range(1,n+1):
+#         l.append(i)
+#     l.reverse()
+#     for i in l:
+#         print(f"*" * i)
+
+
+# patternnn(5)
+
+
+
+# n =3
+# l = []
+# for i in range(1,n+1):
+#     l.append(i)
+# l.reverse()
+# for i in l:
+#     print(f"*" * i)
+#     # return f"*" * i
+
+
+# 📌
+# Solution for the question number 6
+
+def inches_to_centimeter(i):
+    return i * 2.54
+
+
+# 📌
+# Solution for the question number 7
+
+# def list_word_remover(l,word):
+#     for items in l:
+#         if (items==word):
+#           l.remove(word)
+
+
+#     for i in new:
+#         if i.find(word):
+#             i.rstrip(word)
+#     return new
+
+# m = ["Mayank", "Kashyap", "yap"]
+# print(list_word_remover(m,"yap"))
+
+# li = "Heel is the way to the hell".split()
+# # a = list_word_remover(li,"the")
+# # print(a)
+
+# list_word_remover(li,"Heel")
+
+# 📌
+# Solution for the question number 8
+def tables(n):
+    for i in range(1,11):
+        print(f"{n} X {i} = {n*i}")
+
+# tables(34)
+
+
+def list_remove(l,word):
+    new = []
+    for items in l:
+        # new = []
+        if not(items == word):
+            new.append(items.strip(word))
+
+    # return other
+    return new
+
+
+# m = ["Mayank","kashyap","mayhey","ey"]
+# print(list_remove(m , "ey"))
+
+
+
+
+# 📌
+# This program is the game of rock, paper and scissor 
+import random
+
+computer_hand = ["rock","paper","scissor"]
+random.shuffle(computer_hand)
+chand = random.choice(computer_hand)
+
+human_hand = input("Enter the sign: ").lower()
+
+# screen output 
+print(f"You choose :{human_hand}\nThe computer choose :{chand}")
+
+if human_hand == chand:
+    print("Draw")
+else:
+    if human_hand == "rock" and chand == "paper":
+        print("You Lost")
+    elif human_hand == "rock" and chand == "scissor":
+        print("You Won")
+    elif human_hand == "paper" and chand == "rock":
+        print("You Won")
+    elif human_hand == "paper" and chand == "scissor":
+        print("You Lost")
+    elif human_hand == "scissor" and chand == "rock":
+        print("You Lost")
+    elif human_hand == "scissor" and chand == "paper":
+        print("You Won")
