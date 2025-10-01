@@ -893,29 +893,133 @@ def list_remove(l,word):
 
 # 📌
 # This program is the game of rock, paper and scissor 
-import random
+# import random
 
-computer_hand = ["rock","paper","scissor"]
-random.shuffle(computer_hand)
-chand = random.choice(computer_hand)
+# computer_hand = ["rock","paper","scissor"]
+# random.shuffle(computer_hand)
+# chand = random.choice(computer_hand)
 
-human_hand = input("Enter the sign: ").lower()
+# human_hand = input("Enter the sign: ").lower()
 
-# screen output 
-print(f"You choose :{human_hand}\nThe computer choose :{chand}")
+# # screen output 
+# print(f"You choose :{human_hand}\nThe computer choose :{chand}")
 
-if human_hand == chand:
-    print("Draw")
-else:
-    if human_hand == "rock" and chand == "paper":
-        print("You Lost")
-    elif human_hand == "rock" and chand == "scissor":
-        print("You Won")
-    elif human_hand == "paper" and chand == "rock":
-        print("You Won")
-    elif human_hand == "paper" and chand == "scissor":
-        print("You Lost")
-    elif human_hand == "scissor" and chand == "rock":
-        print("You Lost")
-    elif human_hand == "scissor" and chand == "paper":
-        print("You Won")
+# if human_hand == chand:
+#     print("Draw")
+# else:
+#     if human_hand == "rock" and chand == "paper":
+#         print("You Lost")
+#     elif human_hand == "rock" and chand == "scissor":
+#         print("You Won")
+#     elif human_hand == "paper" and chand == "rock":
+#         print("You Won")
+#     elif human_hand == "paper" and chand == "scissor":
+#         print("You Lost")
+#     elif human_hand == "scissor" and chand == "rock":
+#         print("You Lost")
+#     elif human_hand == "scissor" and chand == "paper":
+#         print("You Won")
+
+
+
+# Write
+# read
+# append
+# +
+# readline
+# readlines
+# rb rt 
+# with open()
+
+# with open("experimentation.txt","a") as file:
+#     apptext = file.write("\nThis is the line on the new line")
+
+
+
+# with open("experimentation.txt") as file:
+#     conline = file.readline()
+#     conline2 = file.readline()
+#     print(conline)
+#     print(conline2)
+
+
+# f = open("experimentation.txt","r")
+# # text  = f.write(" This is what I wanted")
+# contant = f.readlines()
+# print(contant)
+# f.close()
+
+
+# 📌
+# this program checks is there any word in the specific file
+# with open("experimentation.txt","w") as f:
+#     f.write("Twinkle Twinkle little star\nHow I wonder what you are\nUp above the world so high like a diamond in the sky.")
+
+# with open("experimentation.txt","r") as f:
+#     text = f.read()
+#     query = input("Enter the world: ")
+#     if query in text:
+#         print("Yes")
+#     else:
+#         print("There is no such word you asked me to search in the file.")
+
+
+# 📌
+# table for the 13 year old 
+# def tablekid(n,file_name):
+#     with open(file_name, "w") as f:
+#         for i in range(1,11): # multiplication of 2
+#             t2 = f"{n} X {i} = {n*i}\n"
+#             f.write(t2)
+
+
+# import os
+# dirs = "TableOf13yo"
+# os.mkdir(dirs)
+
+# for i in range(2,21):
+#     tablekid(i,f"table_{i}")
+#     os.replace(f"table_{i}",f"TableOf13yo/table_{i}")
+
+
+# 📌
+# Wipeout the contant of a file
+# def Wipeout(file):
+#     with open(file,"w") as f:
+#         f.write("")
+
+# Wipeout("experimentation.txt")
+
+# 📌
+# Rename the file to specific name
+# import os 
+# def reename(fiile,renamed_file="renamed_by_python.txt"):
+#     os.replace(fiile,renamed_file)
+
+# reename("experimentation.txt")
+
+# 📌
+# Check weither the files are identical and have similar contant
+# def checkfilei(file1,file2):
+#     f1 = open(file1)
+#     f2 = open(file2)
+#     contant1 = f1.read()
+#     contant2 = f2.read()
+#     if file1 == file2:
+#         print("The names of the files are similar.")
+#     else:
+#         print("The names of the file is not similar")
+#     if contant1 == contant2:
+#         print(f"The contants of {file1} and {file2} are similar.")
+#     else:
+#         print("The contants of the file are not similar.")
+#     f1.close()
+#     f2.close()
+
+# checkfilei("c1.txt","c2.txt")
+
+
+# 📌
+# program to make a copy of a file c1.txt 
+import os 
+
