@@ -1045,37 +1045,76 @@ def list_remove(l,word):
 
 
 # Example paragraph where those words are used
-paragraph = """
-That damn fool thought it was a good idea to start a fire in the woods.
-The idiot nearly burned the whole place down. 
-Sometimes I wonder how such a dumb moron can survive in this world.
-What a jerk — always making stupid choices and dragging others to hell with his crap plans.
-No wonder everyone calls him a loser.
-"""
-censored_words = [
-    "damn",
-    "hell",
-    "crap",
-    "stupid",
-    "idiot",
-    "dumb",
-    "jerk",
-    "moron",
-    "fool",
-    "loser"
-]
+# paragraph = """
+# That damn fool thought it was a good idea to start a fire in the woods.
+# The idiot nearly burned the whole place down. 
+# Sometimes I wonder how such a dumb moron can survive in this world.
+# What a jerk — always making stupid choices and dragging others to hell with his crap plans.
+# No wonder everyone calls him a loser.
+# """
+# censored_words = [
+#     "damn",
+#     "hell",
+#     "crap",
+#     "stupid",
+#     "idiot",
+#     "dumb",
+#     "jerk",
+#     "moron",
+#     "fool",
+#     "loser"
+# ]
 
-with open("c2.txt") as f:
-    contant = f.read()
-    for word in censored_words:
-        if word in contant:
-            print("This text contains censored words!!!!!!!")
-            break
+# with open("c2.txt") as f:
+#     contant = f.read()
+#     for word in censored_words:
+#         if word in contant:
+#             print("This text contains censored words!!!!!!!")
+#             break
+#         else:
+#             print("This text does not contains censored words.")
+#             break
+# with open("c2.txt","w") as file:
+#     for word in censored_words:
+#         modified_text = contant.replace(word,"####")
+#         contant = modified_text
+#     file.write(modified_text)
+
+# 📌 write high score of the hame in the file where ever new high is hit
+"""
+import random
+def game():
+
+    # Generate the random number form the computer
+    number = 7
+
+    # Read the file for empty text and replace it with 0
+    with open("hi_score.txt") as f :
+        highscore = f.read()
+    with open("hi_score.txt","w") as f :
+        if highscore == "":
+            highscore = f.write("0")
+
+    # Giving points
+    turn = 0
+    while turn < 10:
+        ask = int(input("Enter the number: "))
+        with open("hi_score.txt") as f:
+            score = f.read()
+
+        if ask == number:
+            with open("hi_score.txt", "w") as f:
+                f.write(str(int(score)+1))
         else:
-            print("This text does not contains censored words.")
-            break
-with open("c2.txt","w") as file:
-    for word in censored_words:
-        modified_text = contant.replace(word,"####")
-        contant = modified_text
-    file.write(modified_text)
+            with open("hi_score.txt", "w") as f:
+                f.write(str(int(score)-1))
+
+        turn+=1
+        print(turn)
+
+    with open("hi_score.txt") as f:
+        score = f.read()
+    print(f"Your high score is {score}")
+
+game()
+"""
