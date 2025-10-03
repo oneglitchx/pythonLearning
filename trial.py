@@ -1021,5 +1021,61 @@ def list_remove(l,word):
 
 # 📌
 # program to make a copy of a file c1.txt 
-import os 
 
+# 📌
+# A file contains a word “Donkey” multiple times. You need to write a program 
+# which replace this word with ##### by updating the same file.  
+
+# Reading the file weither therer is the word or not
+
+# with open("c1.txt") as f:
+#     contant = f.read()
+#     if "Donkey" in contant:
+#         print("Donkey is present is the file")
+#     else:
+#         print("No, Donkey found.")
+    
+# print(type(contant))
+# # Replacing the word Donkey
+# with open("c1.txt", "w") as f:
+#     f.write(contant.replace("Donkey","#######"))
+
+# 📌
+# Repeat the above program for the list of cencored words
+
+
+# Example paragraph where those words are used
+paragraph = """
+That damn fool thought it was a good idea to start a fire in the woods.
+The idiot nearly burned the whole place down. 
+Sometimes I wonder how such a dumb moron can survive in this world.
+What a jerk — always making stupid choices and dragging others to hell with his crap plans.
+No wonder everyone calls him a loser.
+"""
+censored_words = [
+    "damn",
+    "hell",
+    "crap",
+    "stupid",
+    "idiot",
+    "dumb",
+    "jerk",
+    "moron",
+    "fool",
+    "loser"
+]
+
+with open("c2.txt") as f:
+    contant = f.read()
+    for word in censored_words:
+        if word in contant:
+            print("This text contains censored words!!!!!!!")
+            break
+        else:
+            print("This text does not contains censored words.")
+            break
+with open("c2.txt","w") as file:
+    for word in censored_words:
+        modified_text = contant.replace(word,"####")
+        contant = modified_text
+    file.write(modified_text)
