@@ -1118,3 +1118,132 @@ def game():
 
 game()
 """
+
+# Sone practice on the OOPs
+
+# class Employe:
+
+#     def __init__(self,name,age,job):
+#         self.name = name 
+#         self.age = age
+#         self.job = job
+#     # name = "Template"
+#     # age = "Template"
+#     # job = "Engineer"
+#     salary = 34
+#     address = "Template"
+
+#     def getSalary(self):
+#         print(f"The salary of the person {self.name} is {self.salary}")
+
+#     @staticmethod
+#     def happyBirthday():
+#         print("Happy Birthday to you !!!!!!!")
+
+
+# harry = Employe("Harry Bhai",34,"Software Engineer")
+# print(harry.name)
+
+# 📌 
+# Create a class “Programmer” for storing information of few programmers 
+# working at Microsoft.
+
+# class MicroSoft_Employee:
+#     def __init__(self,name,age,salary,project, language):
+#         self.name = name
+#         self.age = age
+#         self.salary = salary
+#         self.project = project
+#         self.language = language
+    
+#     def projectInfo(self):
+#         print(f"{self.name} is assigned project {self.project}")
+    
+#     def basicInfo(self):
+#         info = f"""
+#         Name : {self.name}
+#         Age : {self.age}
+#         """
+#         print(info)
+
+# mayank = MicroSoft_Employee("Mayank Kashyap",17,5999999999,"Github","Python")
+# mayank.basicInfo()
+
+# midoriya = MicroSoft_Employee("Izuku Midoriya",15,3444,"One For All","C++")
+# midoriya.basicInfo()
+
+# 📌
+# Write a class “Calculator” capable of finding square, cube and square root of a 
+# number. 
+# import math
+# print(dir(math))
+# class Calculator:
+#     def __init__(self,number):
+#         self.number = number
+    
+#     def findSquare(self):
+#         print(f"The square is: {self.number * self.number}")
+    
+#     def findCube(self):
+#         print(f"The cube is: {self.number ** 3}")
+
+#     def findSquare_root(self): # This method is not working
+#         sqroot = self.number ** 1/2
+#         if sqroot == 1:
+#             print("This number has no any perfect square root.")
+#         else:
+#             print(f"The sqare root is: {self.number ** 1/2}")
+
+#     @staticmethod
+#     def greet():
+#         print(f"Hello !!")
+
+# a = Calculator(4)
+# a.findSquare()
+# a.findCube()
+# a.findSquare_root() 
+# a.greet()
+
+
+"""
+mber. 
+3. Create a class with a class attribute a; create an object from it and set ‘a’ 
+directly using ‘object.a = 0’. Does this change the class attribute? 
+Answer: No the class attribute will not be changed
+
+4. Add a static method in problem 2, to greet the user with hello. 
+5. Write a Class ‘Train’ which has methods to book a ticket, get status (no of seats) 
+and get fare information of train running under Indian Railways. 
+6. Can you change the self-parameter inside a class to something else (say 
+“harry”). Try changing self to “slf” or “harry” and see the effects. 
+"""
+
+
+# 📌
+
+class Train:
+    def __init__(self,name,age,mob_number,destination,classs):
+        self.name = name
+        self.age = age
+        self.mob_number = mob_number
+        self.destination = destination
+        self.classs = classs
+    
+    @staticmethod
+    def number_of_seats():
+        print(f"The number of seats available is: {45}")
+
+    @staticmethod
+    def fareIndian_railway():
+        print(f"""
+        The fist class price is rupees:{500}
+        The second class price is rupees:{300}
+        The third class price is rupees:{100}
+        """)
+
+    def bookTicket(self):
+        pass
+
+a = Train("Mayank",34,343434,"Ghar","First")
+a.fareIndian_railway()
+a.number_of_seats()
